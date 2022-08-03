@@ -94,7 +94,7 @@ body {
     }
     @keyframes contacts-animation {
         from {top: 500vw;}
-        to {top: 150vw}
+        to {top: 133vw}
     }
     
     .x-center {
@@ -111,11 +111,13 @@ body {
     }
     
     .contact {
-        width: 20vw;;
-        height: 20vw;;
+        width: 20vw;
+        height: 20vw;
         object-fit: cover;
         transition: ease;
     }
+
+    .desktop {display: none;}
 }
 
 
@@ -209,9 +211,12 @@ body {
         transition: ease;
         transition-property: all;
         transition-duration: 0.15s;
+        fill: var(--main-color-light);
     }
     .contact:hover {
         width: min(16vw, 8vh);
         height: min(16vw, 8vh);
     }
+
+    .mobile {display: none;}
 }

@@ -211,7 +211,6 @@ body {
         transition: ease;
         transition-property: all;
         transition-duration: 0.15s;
-        fill: var(--main-color-light);
     }
     .contact:hover {
         width: min(16vw, 8vh);

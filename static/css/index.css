@@ -22,29 +22,32 @@ body {
 
 
 
-@media (max-device-width : 1499px) {
+/* @media (max-device-width : 1499px) { */
     body {
         background-color: var(--bg-color-dark);
     }
 
     .avatar {
         position: fixed;
-        width: 100vw;
-        height: 100vw;
+        top: 20vw;
+        left: 20vw;
+        width: 60vw;
+        height: 60vw;
+        border-radius: 100%;
         object-fit: cover;
     }
     
     .name-conatiner {
         position: fixed;
-        height: 20vw;
         width: 100vw;
-        font-size: 15vw;
-        line-height: 20vw;
         text-align: center;
         color: var(--main-color-dark);
     }
     .first-name {
-        top: 90vw;
+        top: 70vw;
+        height: 20vw;
+        font-size: 20vw;
+        line-height: 20vw;
         animation: first-name-animation 0.75s;
     }
     @keyframes first-name-animation {
@@ -52,7 +55,10 @@ body {
         to {left: 0vw;}
     }
     .second-name {
-        top: 110vw;
+        top: 90vw;
+        height: 15vw;
+        font-size: 15vw;
+        line-height: 15vw;
         animation: second-name-animation 1.25s;
     }
     @keyframes second-name-animation {
@@ -67,7 +73,7 @@ body {
         font-size: 5vw;
         line-height: 10vw;
         text-align: center;
-        top: 135vw;
+        top: 115vw;
         color: var(--accent-color-light);
         background-color: var(--main-color-dark);
         animation: about-me-animation 1s;
@@ -82,7 +88,7 @@ body {
         justify-content: center;
         position: fixed;
         width: 100vw;
-        top: 150vw;
+        top: 133vw;
         left: 0vw;
         animation: contacts-animation 1.25s;
     }
@@ -110,12 +116,12 @@ body {
         object-fit: cover;
         transition: ease;
     }
-}
+/* } */
 
 
 
 
-
+/* 
 @media (min-device-width : 1500px) {
     body {
         background-color: var(--bg-color-light);
@@ -208,4 +214,4 @@ body {
         width: min(16vw, 8vh);
         height: min(16vw, 8vh);
     }
-}
+} */

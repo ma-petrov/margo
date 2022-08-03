@@ -18,103 +18,194 @@ body {
     overflow: hidden;
 }
 
-button {
-    height: min(8vw, 4vh);
-    padding-left: min(4vw, 2vh);
-    padding-right: min(4vw, 2vh);
-    color: var(--accent-color-light);
-    background-color: transparent;
-    border: 1px solid var(--accent-color-light);
-    border-radius: min(4vw, 2vh);
-    font-size: min(4vw, 2vh);
-    font-weight: 100;
+
+
+
+
+@media (max-device-width : 1499px) {
+    body {
+        background-color: var(--bg-color-dark);
+    }
+
+    .avatar {
+        position: fixed;
+        width: 100vw;
+        height: 100vw;
+        object-fit: cover;
+    }
+    
+    .name-conatiner {
+        position: fixed;
+        height: 20vw;
+        width: 100vw;
+        font-size: 15vw;
+        line-height: 20vw;
+        text-align: center;
+        color: var(--main-color-dark);
+    }
+    .first-name {
+        top: 90vw;
+        animation: first-name-animation 0.75s;
+    }
+    @keyframes first-name-animation {
+        from {left: -100vw;}
+        to {left: 0vw;}
+    }
+    .second-name {
+        top: 110vw;
+        animation: second-name-animation 1.25s;
+    }
+    @keyframes second-name-animation {
+        from {left: 100vw;}
+        to {left: 0vw;}
+    }
+    
+    .about-me {
+        position: fixed;
+        height: 10vw;
+        width: 100vw;
+        font-size: 5vw;
+        line-height: 10vw;
+        text-align: center;
+        top: 135vw;
+        color: var(--accent-color-light);
+        background-color: var(--main-color-dark);
+        animation: about-me-animation 1s;
+    }
+    @keyframes about-me-animation {
+        from {left: 100vw;}
+        to {left: 0vw;}
+    }
+    
+    .contacts {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        top: 150vw;
+        left: 0vw;
+        animation: contacts-animation 1.25s;
+    }
+    @keyframes contacts-animation {
+        from {top: 500vw;}
+        to {top: 150vw}
+    }
+    
+    .x-center {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+    }
+    
+    .y-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20vw;
+    }
+    
+    .contact {
+        width: 20vw;;
+        height: 20vw;;
+        object-fit: cover;
+        transition: ease;
+    }
 }
 
-.avatar {
-    position: fixed;
-    top: min(45vw, 22.5vh);
-    left: calc(42vw - min(30vw, 15vh));
-    width: min(30vw, 15vh);
-    height: min(30vw, 15vh);
-    border-radius: 100%;
-    object-fit: cover;
-    animation: avatar-amination 1s;
-}
-@keyframes avatar-amination {
-    from {top: -50vh;}
-    to {top: min(45vw, 22.5vh);}
-}
 
-.name-conatiner {
-    position: fixed;
-    height: min(15vw, 7.5vh);
-    left: calc(42vw + min(6vw, 3vh));
-    font-size: min(12vw, 6vh);
-}
-.first-name {
-    display: flex;
-    align-items: flex-start;
-    top: min(45vw, 22.5vh);
-    animation: name-animation 0.75s;
-}
-.second-name {
-    display: flex;
-    align-items: flex-end;
-    top: min(50vw, 30vh);
-    animation: name-animation 1.25s;
-}
-@keyframes name-animation {
-    from {left: 100vw;}
-    to {left: calc(42vw + min(6vw, 3vh));}
-}
 
-.about-me {
-    position: fixed;
-    top: min(70vw, 45vh);
-    left: calc(42vw + min(6vw, 3vh));
-    color: var(--accent-color-light);
-    animation: about-me-animation 1s;
-}
-@keyframes about-me-animation {
-    from {left: -150vw;}
-    to {left: calc(42vw + min(6vw, 3vh));}
-}
 
-.contacts {
-    display: flex;
-    position: fixed;
-    top: min(85vw, 52.5vh);
-    left: calc(42vw + min(2vw, 1vh));
-    animation: contacts-animation 1.25s;
-}
-@keyframes contacts-animation {
-    from {top: 150vh;}
-    to {top: min(85vw, 52.5vh);}
-}
 
-.x-center {
-    display: flex;
-    justify-content: center;
-    width: min(16vw, 8vh);
-}
+@media (min-device-width : 1500px) {
+    body {
+        background-color: var(--bg-color-light);
+    }
 
-.y-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: min(16vw, 8vh);
+    .avatar {
+        position: fixed;
+        top: min(45vw, 22.5vh);
+        left: calc(42vw - min(30vw, 15vh));
+        width: min(30vw, 15vh);
+        height: min(30vw, 15vh);
+        border-radius: 100%;
+        object-fit: cover;
+        animation: avatar-amination 1s;
+    }
+    @keyframes avatar-amination {
+        from {top: -50vh;}
+        to {top: min(45vw, 22.5vh);}
+    }
+    
+    .name-conatiner {
+        position: fixed;
+        height: min(15vw, 7.5vh);
+        left: calc(42vw + min(6vw, 3vh));
+        font-size: min(12vw, 6vh);
+    }
+    .first-name {
+        display: flex;
+        align-items: flex-start;
+        top: min(45vw, 22.5vh);
+        animation: name-animation 0.75s;
+    }
+    .second-name {
+        display: flex;
+        align-items: flex-end;
+        top: min(50vw, 30vh);
+        animation: name-animation 1.25s;
+    }
+    @keyframes name-animation {
+        from {left: 100vw;}
+        to {left: calc(42vw + min(6vw, 3vh));}
+    }
+    
+    .about-me {
+        position: fixed;
+        top: min(70vw, 45vh);
+        left: calc(42vw + min(6vw, 3vh));
+        color: var(--accent-color-light);
+        animation: about-me-animation 1s;
+    }
+    @keyframes about-me-animation {
+        from {left: -150vw;}
+        to {left: calc(42vw + min(6vw, 3vh));}
+    }
+    
+    .contacts {
+        display: flex;
+        position: fixed;
+        top: min(85vw, 52.5vh);
+        left: 42.4vw;
+        animation: contacts-animation 1.25s;
+    }
+    @keyframes contacts-animation {
+        from {top: 150vh;}
+        to {top: min(85vw, 52.5vh);}
+    }
+    
+    .x-center {
+        display: flex;
+        justify-content: center;
+        width: min(16vw, 8vh);
+    }
+    
+    .y-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: min(16vw, 8vh);
+    }
+    
+    .contact {
+        width: min(12vw, 6vh);
+        height: min(12vw, 6vh);
+        object-fit: cover;
+        transition: ease;
+        transition-property: all;
+        transition-duration: 0.15s;
+    }
+    .contact:hover {
+        width: min(16vw, 8vh);
+        height: min(16vw, 8vh);
+    }
 }
-
-.contact {
-    width: min(12vw, 6vh);
-    height: min(12vw, 6vh);
-    object-fit: cover;
-    transition: ease;
-    transition-property: all;
-    transition-duration: 0.15s;
-}
-.contact {
-    width: min(16vw, 8vh);
-    height: min(16vw, 8vh);
-}
-

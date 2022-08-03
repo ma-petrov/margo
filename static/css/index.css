@@ -22,7 +22,7 @@ body {
 
 
 
-/* @media (max-device-width : 1499px) { */
+@media (max-device-width : 1499px) {
     body {
         background-color: var(--bg-color-dark);
     }
@@ -116,12 +116,12 @@ body {
         object-fit: cover;
         transition: ease;
     }
-/* } */
+}
 
 
 
 
-/* 
+
 @media (min-device-width : 1500px) {
     body {
         background-color: var(--bg-color-light);
@@ -214,4 +214,4 @@ body {
         width: min(16vw, 8vh);
         height: min(16vw, 8vh);
     }
-} */
+}

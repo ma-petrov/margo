@@ -35,6 +35,17 @@ body {
         height: 60vw;
         border-radius: 100%;
         object-fit: cover;
+        animation: avatar-animation 0.5s;
+    }
+    @keyframes avatar-animation {
+        from {
+            top: 60vw;
+            opacity: 0;
+        }
+        to {
+            top: 20vw;
+            opacity: 1;
+        }
     }
     
     .name-conatiner {
@@ -51,19 +62,31 @@ body {
         animation: first-name-animation 0.75s;
     }
     @keyframes first-name-animation {
-        from {left: -100vw;}
-        to {left: 0vw;}
+        from {
+            top: 110vw;
+            opacity: 0;
+        }
+        to {
+            top: 70vw;
+            opacity: 1;
+        }
     }
     .second-name {
         top: 90vw;
         height: 15vw;
         font-size: 15vw;
         line-height: 15vw;
-        animation: second-name-animation 1.25s;
+        animation: second-name-animation 1s;
     }
     @keyframes second-name-animation {
-        from {left: 100vw;}
-        to {left: 0vw;}
+        from {
+            top: 130vw;
+            opacity: 0;
+        }
+        to {
+            top: 90vw;
+            opacity: 1;
+        }
     }
     
     .about-me {
@@ -76,11 +99,17 @@ body {
         top: 115vw;
         color: var(--accent-color-light);
         background-color: var(--main-color-dark);
-        animation: about-me-animation 1s;
+        animation: about-me-animation 1.25s;
     }
     @keyframes about-me-animation {
-        from {left: 100vw;}
-        to {left: 0vw;}
+        from {
+            top: 155vw;
+            opacity: 0;
+        }
+        to {
+            top: 115vw;
+            opacity: 1;
+        }
     }
     
     .contacts {
@@ -90,11 +119,17 @@ body {
         width: 100vw;
         top: 133vw;
         left: 0vw;
-        animation: contacts-animation 1.25s;
+        animation: contacts-animation 1.5s;
     }
     @keyframes contacts-animation {
-        from {top: 500vw;}
-        to {top: 133vw}
+        from {
+            top: 173vw;
+            opacity: 0;
+        }
+        to {
+            top: 133vw;
+            opacity: 1;
+        }
     }
     
     .x-center {
@@ -137,11 +172,17 @@ body {
         height: min(30vw, 15vh);
         border-radius: 100%;
         object-fit: cover;
-        animation: avatar-amination 1s;
+        animation: avatar-amination 0.5s;
     }
     @keyframes avatar-amination {
-        from {top: -50vh;}
-        to {top: min(45vw, 22.5vh);}
+        from {
+            top: min(65vw, 32.5vh);
+            opacity: 0;
+        }
+        to {
+            top: min(45vw, 22.5vh);
+            opacity: 1;
+        }
     }
     
     .name-conatiner {
@@ -154,17 +195,33 @@ body {
         display: flex;
         align-items: flex-start;
         top: min(45vw, 22.5vh);
-        animation: name-animation 0.75s;
+        animation: first-name-animation 0.75s;
+    }
+    @keyframes first-name-animation {
+        from {
+            top: min(65vw, 32.5vh);
+            opacity: 0;
+        }
+        to {
+            top: min(45vw, 22.5vh);
+            opacity: 1;
+        }
     }
     .second-name {
         display: flex;
         align-items: flex-end;
         top: min(50vw, 30vh);
-        animation: name-animation 1.25s;
+        animation: second-name-animation 1s;
     }
-    @keyframes name-animation {
-        from {left: 100vw;}
-        to {left: calc(42vw + min(6vw, 3vh));}
+    @keyframes second-name-animation {
+        from {
+            top: min(70vw, 40vh);
+            opacity: 0;
+        }
+        to {
+            top: min(50vw, 30vh);
+            opacity: 1;
+        }
     }
     
     .about-me {
@@ -172,11 +229,17 @@ body {
         top: min(70vw, 45vh);
         left: calc(42vw + min(6vw, 3vh));
         color: var(--accent-color-light);
-        animation: about-me-animation 1s;
+        animation: about-me-animation 1.25s;
     }
     @keyframes about-me-animation {
-        from {left: -150vw;}
-        to {left: calc(42vw + min(6vw, 3vh));}
+        from {
+            top: min(90vw, 55vh);
+            opacity: 0;
+        }
+        to {
+            top: min(70vw, 45vh);
+            opacity: 1;
+        }
     }
     
     .contacts {
@@ -184,11 +247,17 @@ body {
         position: fixed;
         top: min(85vw, 52.5vh);
         left: 42.4vw;
-        animation: contacts-animation 1.25s;
+        animation: contacts-animation 1.5s;
     }
     @keyframes contacts-animation {
-        from {top: 150vh;}
-        to {top: min(85vw, 52.5vh);}
+        from {
+            top: min(105vw, 72.5vh);
+            opacity: 0;
+        }
+        to {
+            top: min(85vw, 52.5vh);
+            opacity: 1;
+        }
     }
     
     .x-center {
